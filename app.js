@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const apiKey = "q4moiPN4e7Prdn1Ebgdx3lfe1mwqeGVf"; // Replace with your actual API key
+    const apiKey = "q4moiPN4e7Prdn1Ebgdx3lfe1mwqeGVf";
     const form = document.getElementById("cityForm");
     const weatherDiv = document.getElementById("weather");
 
@@ -123,10 +123,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const weekday = date.toLocaleDateString('en-US', { weekday: 'long' });
         const minTemp = day.Temperature.Minimum.Value;
         const maxTemp = day.Temperature.Maximum.Value;
-        const dayWeatherText = day.Day.IconPhrase; // IconPhrase for daytime weather
-        const nightWeatherText = day.Night.IconPhrase; // IconPhrase for nighttime weather
+        const dayWeatherText = day.Day.IconPhrase; 
+        const nightWeatherText = day.Night.IconPhrase; 
 
-        // Determine the appropriate weather icon for day and night
         const dayIcon = getWeatherIcon(dayWeatherText);
         const nightIcon = getWeatherIcon(nightWeatherText);
 
